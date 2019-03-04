@@ -1,0 +1,10 @@
+https://docs.microsoft.com/en-us/ef/core/get-started/uwp/getting-started
+
+Using EF Core with SQLite
+
+The instruction on the website is wrong/unclear.
+**On the step - "Create the initial migration", need to set default project to the Class Library project that has the DbContext, 
+then specify the startup project to be the other one.
+Add-Migration InitialCreate -StartupProject DataMigrations.Startup
+
+also UWP app needs to NuGet Microsoft.EntityFrameworkCore.
